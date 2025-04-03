@@ -1,1 +1,1 @@
-# 30.javascrip.projects
+# javascrip.projects
