@@ -25,10 +25,10 @@ html {
   #white {
     background: white;
   }
-  #blue {
-    background: blue;
+  #pink {
+    background: rgb(232, 0, 193);
   }
-  #yellow {
-    background: yellow;
+  #black {
+    background: rgb(2, 2, 1);
   }
   

@@ -9,9 +9,9 @@ const buttons=document.querySelectorAll('.button');
     console.log(e.target);
     if(e.target.id==='grey')
     {
-         body.style.backgroundColor=e.target.id
+         body.style.backgroundColor='grey'
     }
-    if(e.target.id==='yellow')
+    if(e.target.id==='black')
     {
          body.style.backgroundColor=e.target.id
     }
@@ -21,7 +21,7 @@ const buttons=document.querySelectorAll('.button');
          body.style.backgroundColor=e.target.id
     }
 
-    if(e.target.id==='blue')
+    if(e.target.id==='pink')
     {
          body.style.backgroundColor=e.target.id
     }
