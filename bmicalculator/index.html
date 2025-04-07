@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>BMI Calculator</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(to right, #667eea, #764ba2);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      nav {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+        font-weight: bold;
+        border-bottom: 2px solid transparent;
+      }
+
+      nav a:hover {
+        border-color: white;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 2rem 2.5rem;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        color: white;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .container h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: #fff;
+      }
+
+      form p {
+        margin-bottom: 1rem;
+        text-align: left;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.3rem;
+        font-weight: 500;
+      }
+
+      input {
+        width: 100%;
+        padding: 0.7rem;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+      }
+
+      button {
+        margin-top: 1rem;
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 10px;
+        background-color: #fff;
+        color: #333;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #f0f0f0;
+        transform: scale(1.05);
+      }
+
+      #results {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      #weight-guide {
+        margin-top: 2rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 1rem;
+        border-radius: 15px;
+        text-align: left;
+      }
+
+      #weight-guide h3 {
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        text-align: center;
+      }
+
+      #weight-guide p {
+        font-size: 0.95rem;
+        margin: 0.3rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a target="_blank" href="https://www.youtube.com/@chaiaurcode">
+        Youtube channel</a
+      >
+    </nav>
+
+    <div class="container">
+      <h1>BMI Calculator</h1>
+      <form>
+        <p><label>Height in CM:</label><input type="text" id="height" /></p>
+        <p><label>Weight in KG:</label><input type="text" id="weight" /></p>
+        <button type="submit">Calculate</button>
+        <div id="results"></div>
+
+        <div id="weight-guide">
+          <h3>BMI Weight Guide</h3>
+          <p>Under Weight = Less than 18.6</p>
+          <p>Normal Range = 18.6 and 24.9</p>
+          <p>Overweight = Greater than 24.9</p>
+        </div>
+      </form>
+    </div>
+    <script src="one.js"></script>
+  </body>
+</html>
